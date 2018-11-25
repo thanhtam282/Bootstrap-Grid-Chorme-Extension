@@ -25,7 +25,12 @@ function devTool() {
         $('.wrapper').css('padding-right', '15px')
         $('.wrapper').css('padding-left', '15px')
         $('.wrapper').css('margin', '0 auto')
+        $('.wrapper').css('height', '100%')
         $('.wrapper .row').css('display', 'flex')
+        $('.wrapper .row').css('margin-left', '-15px')
+        $('.wrapper .row').css('margin-right', '-15px')
+        $('.wrapper .row').css('flex-direction', 'row')
+        $('.wrapper .row').css('height', '100%')
         $('.wrapper .row').css('margin-left', '-15px')
         $('.wrapper .row').css('margin-right', '-15px')
     }
@@ -37,8 +42,11 @@ function devTool() {
         $('.wrapper-fluid').css('padding-left', '15px')
         $('.wrapper-fluid').css('margin', '0')
         $('.wrapper-fluid .row').css('display', 'flex')
-        $('.wrapper .row').css('margin-left', '-15px')
-        $('.wrapper .row').css('margin-right', '-15px')
+        $('.wrapper-fluid .row').css('flex-direction', 'row')
+        $('.wrapper-fluid .row').css('height', '100%')
+        $('.wrapper-fluid .row').css('margin-left', '-15px')
+        $('.wrapper-fluid .row').css('margin-right', '-15px')
+        $('.wrapper-fluid').css('height', '100%')
     }
     init();
     $('.togglegird2 button').on('click', function () {

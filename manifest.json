@@ -1,8 +1,8 @@
 {
-  "name": "Bootstrap Grid",
+  "name": "Bootstrap Grid for any Website",
   "version": "1.0",
   "manifest_version": 2,
-  "description": "Quickly toggle a Bootstrap Grid.",
+  "description": "Quickly toggle a Bootstrap Grid for any website. Easy to use, easy success.",
   "browser_action": {
     "default_icon": "src/icon48.png"
   },
