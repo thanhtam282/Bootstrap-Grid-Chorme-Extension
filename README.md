@@ -1,11 +1,11 @@
 # Bootstrap Grid - Chrome Extension
 
 Boostrap Grid will display 12 vitual bootstrap columns and padding  (grid) in your display. 
-Click the Bootstrap Grid  icon to toggle the overlay on and off. The grid will be **displayed in any website**. If you change change size responsive. please push on/off button to make grid correct.
+Click the Bootstrap Grid  icon to toggle the overlay on and off. The grid will be **displayed in any website**. If you change change size responsive. the grid will change also
 
 You can choose one of below instruction.
 
-## Install
+## Instruction
 
 1. When you click the extension's icon an overlay will appear displaying the Bootstrap grid.
 2. Fluid button will enable/disable container fluid 

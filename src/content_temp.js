@@ -85,18 +85,28 @@ function devTool() {
 
 
 
-if ($('body').find('.gridtamnguyen').length === 0) {
-    // showGrid();
-    // $(document).resize(function(){
-    //     devTool()
 
-    // })
-    // $(document).ready(function () {
-    devTool()
-    // })
-} else {
-    $('.gridtamnguyen').remove();
-    $('.togglegird').remove();
-    $('.togglegird2').remove();
+// devTool()
+init_depend_size()
+function init_depend_size() {
+    if ($(window).width() > 1200) {
+        $('.wrapper').css('max-width', '1140px')
+        $('.wrapper').css('width', '100%')
+    } else if ($(window).width() > 992) {
+        $('.wrapper').css('max-width', '960px')
+        $('.wrapper').css('width', '100%')
+    } else if ($(window).width() > 768) {
+        $('.wrapper').css('max-width', '720px')
+        $('.wrapper').css('width', '100%')
+    } else if ($(window).width() > 576) {
+        $('.wrapper').css('max-width', '540px')
+        $('.wrapper').css('width', '100%')
+    } else {
+        $('.wrapper').css('max-width', 'initial')
+        $('.wrapper').css('width', '100%')
+
+    }
 }
+// })
+
 
