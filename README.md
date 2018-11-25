@@ -7,16 +7,13 @@ You can choose one of below instruction.
 
 ## Install
 
-1. Clone repo `https://goo.gl/a21Gjn`
-2. Go to `chrome://extensions` in your Chrome browser
-3. Enable developer mode
-4. Click `Load unpacked extension`
-5. Find where you cloned the repo and select that directory
-
-When you click the extension's icon an overlay will appear displaying the Bootstrap grid. Fluid button will enable/disable container fluid 
+1. When you click the extension's icon an overlay will appear displaying the Bootstrap grid.
+2. Fluid button will enable/disable container fluid 
+3. On/Off button will quickly enable/disable grid quickly
 
 ## Install from Chrome Web Store
 
-1. Get extension from the [web store] --- comming soon
+1. Get extension from the [web store] 
+https://chrome.google.com/webstore/detail/bootstrap-grid-for-any-we/ngjnlpkfccnglmlobafmobgjoiiliden
 
 Donate for me: https://unghotoi.com/1543136351wnvtq
