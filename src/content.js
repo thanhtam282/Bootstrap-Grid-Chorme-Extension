@@ -6,9 +6,9 @@ function devTool() {
     var girdDev = '<div class="gridtamnguyen active"> <div class="wrapper"> <div class="row"> <div class="col-1 item"> <div class="bg"></div> </div> <div class="col-1 item"> <div class="bg"></div> </div> <div class="col-1 item"> <div class="bg"></div> </div> <div class="col-1 item"> <div class="bg"></div> </div> <div class="col-1 item"> <div class="bg"></div> </div> <div class="col-1 item"> <div class="bg"></div> </div> <div class="col-1 item"> <div class="bg"></div> </div> <div class="col-1 item"> <div class="bg"></div> </div> <div class="col-1 item"> <div class="bg"></div> </div> <div class="col-1 item"> <div class="bg"></div> </div> <div class="col-1 item"> <div class="bg"></div> </div> <div class="col-1 item"> <div class="bg"></div> </div> </div> </div> </div>'
 
 
-    var cssDev = '.togglegird { position: fixed; right: 1rem; bottom: 1rem; z-index: 9000; } .gridtamnguyen { position: fixed; top: 0; left: 0; height: 100vh; z-index: 8000; display: none; width: 100%; } .gridtamnguyen.active { display: flex; pointer-events: none; } .gridtamnguyen .item { flex-basis: 0; flex-grow: 1; max-width: 100%; height: 100vh; padding-top: 0; padding-right: 15px; padding-bottom: 0; padding-left: 15px; } .gridtamnguyen .item .bg { background: cornflowerblue; height: 100vh;  } .togglegird .btn {width: 65px ; border-radius: 0.5rem; border-color: #007bff  ; font-size: 1rem; background: #007bff; color: white} .gridtamnguyen .col-1 {background: antiquewhite; opacity:  0.5}  .gridtamnguyen .wrapper .row {display: flex; max-width: initial; } .gridtamnguyen .wrapper-fluid {margin: 0}'
+    var cssDev = '.togglegird { position: fixed; right: 1rem; bottom: 1rem; z-index: 9000; } .gridtamnguyen { position: fixed; top: 0; left: 0; height: 100vh; z-index: 8000; display: none; width: 100%; } .gridtamnguyen.active { display: flex; pointer-events: none; } .gridtamnguyen .item { flex-basis: 0; flex-grow: 1; max-width: 100%; height: 100vh; padding-top: 0; padding-right: 15px; padding-bottom: 0; padding-left: 15px; } .gridtamnguyen .item .bg { background: cornflowerblue; height: 100vh;  } .togglegird .btn {width: 5rem ; border-radius: 0.5rem; border-color: #007bff  ; font-size: 1rem; background: #007bff; color: white; padding: 0.375rem 0.75rem; font-family : Roboto} .gridtamnguyen .col-1 {background: antiquewhite; opacity:  0.5}  .gridtamnguyen .wrapper .row {display: flex; max-width: initial; } .gridtamnguyen .wrapper-fluid {margin: 0}'
 
-    var cssDev2 = '.togglegird2 { position: fixed; right: 1rem; bottom: 4.5rem; z-index: 9001; } .togglegird2 .btn {width: 65px; border-radius: 0.5rem; border-color: #007bff  ; font-size: 1rem; background: #007bff; color: white}'
+    var cssDev2 = '.togglegird2 { position: fixed; right: 1rem; bottom: 4.5rem; z-index: 9001; } .togglegird2 .btn {width: 5rem; border-radius: 0.5rem; border-color: #007bff  ; font-size: 1rem; background: #007bff; color: white; padding: 0.375rem 0.75rem; font-family : Roboto}'
 
     $('head').append('<style type="text/css">' + cssDev + '</style>')
 
@@ -18,8 +18,9 @@ function devTool() {
 
     $('.togglegird button').on('click', function () {
         $('.gridtamnguyen').toggleClass('active')
+        init_depend_size();
     })
-
+    
     function init() {
         $('.wrapper').css('padding-right', '15px')
         $('.wrapper').css('padding-left', '15px')
