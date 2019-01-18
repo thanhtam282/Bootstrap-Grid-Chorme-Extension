@@ -1,5 +1,6 @@
 {
   "name": "Bootstrap Grid for any Website",
+  "short_name": "Bootstrap Grid",
   "version": "1.1.0",
   "manifest_version": 2,
   "description": "Quickly toggle a Bootstrap Grid for any website. Easy to use, easy success.",
@@ -8,16 +9,17 @@
   },
   "background" : {
     "scripts" : [
-      "src/background.js"
+      "background.js"
     ]
   },
-  "content_scripts": [
-    {
-      "js":         [ "src/send_value.js" ],
-      "matches":    [ "<all_urls>" ],
-      "all_frames": true,
-      "run_at":     "document_end"
-    }
- ],
-  "permissions": ["activeTab"]
+  "permissions": [
+    "activeTab"
+  ],
+
+  "web_accessible_resources":[
+    "src/content",
+    "src/content_temp",
+    "libs/jquery.js"
+  ]
+
 }

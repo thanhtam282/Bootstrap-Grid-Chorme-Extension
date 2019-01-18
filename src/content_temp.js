@@ -3,10 +3,10 @@ function devTool() {
 
     var butDev2 = '<div class="togglegird2"> <button class="btn btn-primary" width="65" id="button" type="submit">Fluid</button> </div>'
 
-    var girdDev = '<div class="gridtamnguyen active"> <div class="wrapper"> <div class="row"> <div class="col-1 item"> <div class="bg"></div> </div> <div class="col-1 item"> <div class="bg"></div> </div> <div class="col-1 item"> <div class="bg"></div> </div> <div class="col-1 item"> <div class="bg"></div> </div> <div class="col-1 item"> <div class="bg"></div> </div> <div class="col-1 item"> <div class="bg"></div> </div> <div class="col-1 item"> <div class="bg"></div> </div> <div class="col-1 item"> <div class="bg"></div> </div> <div class="col-1 item"> <div class="bg"></div> </div> <div class="col-1 item"> <div class="bg"></div> </div> <div class="col-1 item"> <div class="bg"></div> </div> <div class="col-1 item"> <div class="bg"></div> </div> </div> </div> </div>'
+    var girdDev = '<div class="gridtamnguyen active"> <div class="wrapper-tamnguyen"> <div class="row"> <div class="col-1 item"> <div class="bg"></div> </div> <div class="col-1 item"> <div class="bg"></div> </div> <div class="col-1 item"> <div class="bg"></div> </div> <div class="col-1 item"> <div class="bg"></div> </div> <div class="col-1 item"> <div class="bg"></div> </div> <div class="col-1 item"> <div class="bg"></div> </div> <div class="col-1 item"> <div class="bg"></div> </div> <div class="col-1 item"> <div class="bg"></div> </div> <div class="col-1 item"> <div class="bg"></div> </div> <div class="col-1 item"> <div class="bg"></div> </div> <div class="col-1 item"> <div class="bg"></div> </div> <div class="col-1 item"> <div class="bg"></div> </div> </div> </div> </div>'
 
 
-    var cssDev = '.togglegird { position: fixed; right: 1rem; bottom: 1rem; z-index: 9000; } .gridtamnguyen { position: fixed; top: 0; left: 0; height: 100vh; z-index: 8000; display: none; width: 100%; } .gridtamnguyen.active { display: flex; pointer-events: none; } .gridtamnguyen .item { flex-basis: 0; flex-grow: 1; max-width: 100%; height: 100vh; padding-top: 0; padding-right: 15px; padding-bottom: 0; padding-left: 15px; } .gridtamnguyen .item .bg { background: cornflowerblue; height: 100vh;  } .togglegird .btn {width: 5rem ; border-radius: 0.5rem; border-color: #007bff  ; font-size: 1rem; background: #007bff; color: white; padding: 0.375rem 0.75rem; font-family : Roboto} .gridtamnguyen .col-1 {background: antiquewhite; opacity:  0.5}  .gridtamnguyen .wrapper .row {display: flex; max-width: initial; } .gridtamnguyen .wrapper-fluid {margin: 0}'
+    var cssDev = '.togglegird { position: fixed; right: 1rem; bottom: 1rem; z-index: 9000; } .gridtamnguyen { position: fixed; top: 0; left: 0; height: 100vh; z-index: 8000; display: none; width: 100%; } .gridtamnguyen.active { display: flex; pointer-events: none; } .gridtamnguyen .item { flex-basis: 0; flex-grow: 1; max-width: 100%; height: 100vh; padding-top: 0; padding-right: 15px; padding-bottom: 0; padding-left: 15px; } .gridtamnguyen .item .bg { background: cornflowerblue; height: 100vh;  } .togglegird .btn {width: 5rem ; border-radius: 0.5rem; border-color: #007bff  ; font-size: 1rem; background: #007bff; color: white; padding: 0.375rem 0.75rem; font-family : Roboto} .gridtamnguyen .col-1 {background: antiquewhite; opacity:  0.5}  .gridtamnguyen .wrapper-tamnguyen .row {display: flex; max-width: initial; } .gridtamnguyen .wrapper-tamnguyen-fluid {margin: 0}'
 
     var cssDev2 = '.togglegird2 { position: fixed; right: 1rem; bottom: 4.5rem; z-index: 9001; } .togglegird2 .btn {width: 5rem; border-radius: 0.5rem; border-color: #007bff  ; font-size: 1rem; background: #007bff; color: white; padding: 0.375rem 0.75rem; font-family : Roboto}'
 
@@ -22,40 +22,40 @@ function devTool() {
     })
     
     function init() {
-        $('.wrapper').css('padding-right', '15px')
-        $('.wrapper').css('padding-left', '15px')
-        $('.wrapper').css('margin', '0 auto')
-        $('.wrapper').css('height', '100%')
-        $('.wrapper .row').css('display', 'flex')
-        $('.wrapper .row').css('margin-left', '-15px')
-        $('.wrapper .row').css('margin-right', '-15px')
-        $('.wrapper .row').css('flex-direction', 'row')
-        $('.wrapper .row').css('height', '100%')
-        $('.wrapper .row').css('margin-left', '-15px')
-        $('.wrapper .row').css('margin-right', '-15px')
+        $('.wrapper-tamnguyen').css('padding-right', '15px')
+        $('.wrapper-tamnguyen').css('padding-left', '15px')
+        $('.wrapper-tamnguyen').css('margin', '0 auto')
+        $('.wrapper-tamnguyen').css('height', '100%')
+        $('.wrapper-tamnguyen .row').css('display', 'flex')
+        $('.wrapper-tamnguyen .row').css('margin-left', '-15px')
+        $('.wrapper-tamnguyen .row').css('margin-right', '-15px')
+        $('.wrapper-tamnguyen .row').css('flex-direction', 'row')
+        $('.wrapper-tamnguyen .row').css('height', '100%')
+        $('.wrapper-tamnguyen .row').css('margin-left', '-15px')
+        $('.wrapper-tamnguyen .row').css('margin-right', '-15px')
     }
     
     function init_fluid() {
-        $('.wrapper-fluid').css('padding-right', '15px')
-        $('.wrapper-fluid').css('max-width', 'initial')
-        $('.wrapper-fluid').css('width', '100%')
-        $('.wrapper-fluid').css('padding-left', '15px')
-        $('.wrapper-fluid').css('margin', '0')
-        $('.wrapper-fluid .row').css('display', 'flex')
-        $('.wrapper-fluid .row').css('flex-direction', 'row')
-        $('.wrapper-fluid .row').css('height', '100%')
-        $('.wrapper-fluid .row').css('margin-left', '-15px')
-        $('.wrapper-fluid .row').css('margin-right', '-15px')
-        $('.wrapper-fluid').css('height', '100%')
+        $('.wrapper-tamnguyen-fluid').css('padding-right', '15px')
+        $('.wrapper-tamnguyen-fluid').css('max-width', 'initial')
+        $('.wrapper-tamnguyen-fluid').css('width', '100%')
+        $('.wrapper-tamnguyen-fluid').css('padding-left', '15px')
+        $('.wrapper-tamnguyen-fluid').css('margin', '0')
+        $('.wrapper-tamnguyen-fluid .row').css('display', 'flex')
+        $('.wrapper-tamnguyen-fluid .row').css('flex-direction', 'row')
+        $('.wrapper-tamnguyen-fluid .row').css('height', '100%')
+        $('.wrapper-tamnguyen-fluid .row').css('margin-left', '-15px')
+        $('.wrapper-tamnguyen-fluid .row').css('margin-right', '-15px')
+        $('.wrapper-tamnguyen-fluid').css('height', '100%')
     }
     init();
     $('.togglegird2 button').on('click', function () {
-        var fs = $('.gridtamnguyen .wrapper').hasClass('wrapper')
+        var fs = $('.gridtamnguyen .wrapper-tamnguyen').hasClass('wrapper-tamnguyen')
         if (fs) {
-            $('.gridtamnguyen .wrapper').removeAttr("style").removeClass('wrapper').addClass('wrapper-fluid');
+            $('.gridtamnguyen .wrapper-tamnguyen').removeAttr("style").removeClass('wrapper-tamnguyen').addClass('wrapper-tamnguyen-fluid');
             init_fluid();
         } else {
-            $('.gridtamnguyen .wrapper-fluid').removeAttr("style").removeClass('wrapper-fluid').addClass('wrapper');
+            $('.gridtamnguyen .wrapper-tamnguyen-fluid').removeAttr("style").removeClass('wrapper-tamnguyen-fluid').addClass('wrapper-tamnguyen');
             init();
             init_depend_size()
         }
@@ -64,20 +64,20 @@ function devTool() {
     init_depend_size()
     function init_depend_size() {
         if ($(window).width() > 1200) {
-            $('.wrapper').css('max-width', '1140px')
-            $('.wrapper').css('width', '100%')
+            $('.wrapper-tamnguyen').css('max-width', '1140px')
+            $('.wrapper-tamnguyen').css('width', '100%')
         } else if ($(window).width() > 992) {
-            $('.wrapper').css('max-width', '960px')
-            $('.wrapper').css('width', '100%')
+            $('.wrapper-tamnguyen').css('max-width', '960px')
+            $('.wrapper-tamnguyen').css('width', '100%')
         } else if ($(window).width() > 768) {
-            $('.wrapper').css('max-width', '720px')
-            $('.wrapper').css('width', '100%')
+            $('.wrapper-tamnguyen').css('max-width', '720px')
+            $('.wrapper-tamnguyen').css('width', '100%')
         } else if ($(window).width() > 576) {
-            $('.wrapper').css('max-width', '540px')
-            $('.wrapper').css('width', '100%')
+            $('.wrapper-tamnguyen').css('max-width', '540px')
+            $('.wrapper-tamnguyen').css('width', '100%')
         } else {
-            $('.wrapper').css('max-width', 'initial')
-            $('.wrapper').css('width', '100%')
+            $('.wrapper-tamnguyen').css('max-width', 'initial')
+            $('.wrapper-tamnguyen').css('width', '100%')
 
         }
     }
@@ -90,20 +90,20 @@ function devTool() {
 init_depend_size()
 function init_depend_size() {
     if ($(window).width() > 1200) {
-        $('.wrapper').css('max-width', '1140px')
-        $('.wrapper').css('width', '100%')
+        $('.wrapper-tamnguyen').css('max-width', '1140px')
+        $('.wrapper-tamnguyen').css('width', '100%')
     } else if ($(window).width() > 992) {
-        $('.wrapper').css('max-width', '960px')
-        $('.wrapper').css('width', '100%')
+        $('.wrapper-tamnguyen').css('max-width', '960px')
+        $('.wrapper-tamnguyen').css('width', '100%')
     } else if ($(window).width() > 768) {
-        $('.wrapper').css('max-width', '720px')
-        $('.wrapper').css('width', '100%')
+        $('.wrapper-tamnguyen').css('max-width', '720px')
+        $('.wrapper-tamnguyen').css('width', '100%')
     } else if ($(window).width() > 576) {
-        $('.wrapper').css('max-width', '540px')
-        $('.wrapper').css('width', '100%')
+        $('.wrapper-tamnguyen').css('max-width', '540px')
+        $('.wrapper-tamnguyen').css('width', '100%')
     } else {
-        $('.wrapper').css('max-width', 'initial')
-        $('.wrapper').css('width', '100%')
+        $('.wrapper-tamnguyen').css('max-width', 'initial')
+        $('.wrapper-tamnguyen').css('width', '100%')
 
     }
 }
