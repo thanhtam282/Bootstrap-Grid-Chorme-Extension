@@ -1,7 +1,7 @@
 {
   "name": "Bootstrap Grid for any Website",
   "short_name": "Bootstrap Grid",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "manifest_version": 2,
   "description": "Quickly toggle a Bootstrap Grid for any website. Easy to use, easy success.",
   "browser_action": {
